@@ -1,0 +1,21 @@
+This version of the Signal Phase and Timing (SPaT) and related messages was developed under contract with FHWA Office of Operations R&D and was deployed as part of the Safety Pilot Model Deployment that was conducted in Ann Arbor, MI.  It presently has been tested with both Econolite and Siemens controllers that have the necessary SPaT firmware installed.   This firmware is a separate product of the respective vendors and is not included in this bundle.
+
+Windows XP Embedded, Windows 7 Embedded 32-bit
+
+Software Modules included in this Package:
+
+- ASNJ2735.exe - ASN encoding/decoding server.  This application is used by the SPaT system and RTCM system to perform the ASN.1 encoding and decoding of the J2735 messages. 
+- config.xml - System configuration. This file provides the SPaT system its configuration settings as described in this document. 
+- Map.exe- Map encoding/decoding server.  This application is used by the Map system to provide the encoding and decoding of the map message in accordance with the interface control document.
+- MAPSystem.exe	- Map system application executable.  
+- RTCMSystem.exe - GPS corrections application executable.
+- SPaTSystem.exe - SPaT system application executable.
+- (PTLM filename).xml -	Intersections Phase-to-Lane Movement table.  This file provides the SPaT system its TSC phase to intersection lane movement mapping as described in this document.
+- (GID filename).xml	Intersections GID description.  This file provides the Map system with one or more source GID files for the intersection as identified in the system configuration file as described in this document.
+
+Dependencies
+
+- AxInterop.axNtcipIOControl.dll - Is a control wrapper for the NTCIP ActiveX control which can be dragged onto a Windows form.
+- axNtcipIOControl.ocx - The NTCIP ActiveX library OLE Control Extension file.
+- Interop.axNtcipIOControl.dll	 NTCIP ActiveX library file to enable communication with Microsoft’s .Net environment.
+- Microsoft.VisualBasic.PowerPacks.Vs.dll - Support controls for the user interface.
